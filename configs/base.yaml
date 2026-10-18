@@ -1,0 +1,10 @@
+seed: 42
+data_version: "fashion-product-images-small (Kaggle)"
+image_size: 224
+normalize_mean: [0.485, 0.456, 0.406]
+normalize_std: [0.229, 0.224, 0.225]
+min_images_per_category: 50
+split:
+  seen_ratios: [0.70, 0.15, 0.15]
+  unseen_holdout_fraction: 0.20
+metrics: [recall@1, recall@5, recall@10, mAP@10, ndcg@10, p95_latency_ms]
